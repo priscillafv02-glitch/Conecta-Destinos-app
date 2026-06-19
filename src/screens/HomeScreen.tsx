@@ -21,8 +21,8 @@ export function HomeScreen({ navigation }: HomeProps) {
         imageStyle={styles.heroImage}
       >
         <View style={styles.heroOverlay}>
-          <Text style={styles.heroTitle}>O mundo espera por voce!</Text>
-          <Text style={styles.heroText}>Destinos organizados, pacotes claros e viagens mais faceis de planejar.</Text>
+          <Text style={styles.heroTitle}>O mundo espera por você!</Text>
+          <Text style={styles.heroText}>Destinos organizados, pacotes claros e viagens mais fáceis de planejar.</Text>
           <TouchableOpacity style={styles.heroButton} activeOpacity={0.8} onPress={() => navigation.navigate("Destinations")}>
             <Text style={styles.heroButtonText}>Conferir destinos</Text>
           </TouchableOpacity>
@@ -31,10 +31,10 @@ export function HomeScreen({ navigation }: HomeProps) {
 
       <View style={styles.content}>
         <View style={styles.searchBox}>
-          <Text style={styles.searchTitle}>Planeje sua proxima viagem</Text>
+          <Text style={styles.searchTitle}>Planeje sua próxima viagem</Text>
           <View style={styles.formRow}>
             <TextInput placeholder="Origem" style={styles.input} placeholderTextColor={colors.muted} />
-            <TextInput placeholder="Para onde voce vai?" style={styles.input} placeholderTextColor={colors.muted} />
+            <TextInput placeholder="Para onde você vai?" style={styles.input} placeholderTextColor={colors.muted} />
             <TextInput placeholder="Data de ida" style={styles.input} placeholderTextColor={colors.muted} />
             <TouchableOpacity
               style={styles.searchButton}
