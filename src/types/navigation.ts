@@ -7,6 +7,10 @@ export type RootStackParamList = {
   Payment: {
     destinationId: string;
   };
+  ShareTrip: {
+    destinationId: string;
+  };
+  TravelTips: undefined;
   About: undefined;
   Profile: undefined;
 };

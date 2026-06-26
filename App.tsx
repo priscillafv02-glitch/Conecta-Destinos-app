@@ -8,6 +8,8 @@ import { DestinationsScreen } from "./src/screens/DestinationsScreen";
 import { HomeScreen } from "./src/screens/HomeScreen";
 import { PaymentScreen } from "./src/screens/PaymentScreen";
 import { ProfileScreen } from "./src/screens/ProfileScreen";
+import { ShareTripScreen } from "./src/screens/ShareTripScreen";
+import { TravelTipsScreen } from "./src/screens/TravelTipsScreen";
 import { RootStackParamList } from "./src/types/navigation";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -30,6 +32,8 @@ export default function App() {
               presentation: "transparentModal"
             }}
           />
+          <Stack.Screen name="ShareTrip" component={ShareTripScreen} />
+          <Stack.Screen name="TravelTips" component={TravelTipsScreen} />
           <Stack.Screen name="About" component={AboutScreen} />
           <Stack.Screen name="Profile" component={ProfileScreen} />
         </Stack.Navigator>

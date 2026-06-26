@@ -66,6 +66,13 @@ export function DestinationDetailsScreen({ navigation, route }: DetailsProps) {
             <TouchableOpacity style={styles.secondaryButton} activeOpacity={0.8} onPress={() => navigation.navigate("About")}>
               <Text style={styles.secondaryButtonText}>Falar com especialista</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.shareButton}
+              activeOpacity={0.8}
+              onPress={() => navigation.navigate("ShareTrip", { destinationId: destination.id })}
+            >
+              <Text style={styles.shareButtonText}>Compartilhar viagem</Text>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -222,6 +229,20 @@ const styles = StyleSheet.create({
   secondaryButtonText: {
     color: colors.blue700,
     fontWeight: "900"
+  },
+  shareButton: {
+    alignItems: "center",
+    backgroundColor: colors.blue100,
+    borderColor: colors.line,
+    borderRadius: 6,
+    borderWidth: 1,
+    marginTop: 10,
+    paddingVertical: 12
+  },
+  shareButtonText: {
+    color: colors.blue900,
+    fontWeight: "900",
+    textTransform: "uppercase"
   },
   infoGrid: {
     flexDirection: "row",

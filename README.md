@@ -8,18 +8,20 @@ Aplicativo de viagens feito em React Native com TypeScript. O projeto foi organi
 - Tela de destinos com `FlatList`, filtros por regiao e cards responsivos.
 - Tela de destinos com selecao de card e aba de resumo com preco do pacote.
 - Tela de detalhes com galeria de imagens, informacoes do pacote, preco, roteiro e botao para pagamento.
+- Tela de compartilhamento da viagem com QR Code escaneavel e uso do `Share` do React Native.
+- Tela de dicas de viagem com checklist basico do que levar e do que conferir antes de viajar.
 - Tela de pagamento ficticio aberta como modal por cima da tela atual.
 - Tela de sobre/contato com formulario, dados da agencia, mapa ilustrativo e depoimentos.
 - Tela de perfil ficticio com nome, e-mail, preferencias e resumo.
 - Navbar reutilizavel no topo e footer reutilizavel.
-- Componentes principais do React Native: `Image`, `ImageBackground`, `FlatList`, `ScrollView`, `TouchableOpacity`, `Pressable` e `TextInput`.
+- Componentes principais do React Native: `Image`, `ImageBackground`, `FlatList`, `ScrollView`, `TouchableOpacity`, `Pressable`, `TextInput` e `Share`.
 
 ## Organizacao
 
 ```txt
 src/
-  components/   Componentes reutilizaveis, como Header, Footer e DestinationCard
-  data/         Dados dos destinos usados no app
+  components/   Componentes reutilizaveis, como Header, Footer, DestinationCard e TipCard
+  data/         Dados dos destinos e dicas usados no app
   screens/      Telas principais do aplicativo
   theme/        Paleta de cores
   types/        Tipagens de navegacao e destino

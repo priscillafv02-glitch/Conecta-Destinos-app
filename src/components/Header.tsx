@@ -3,7 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { colors } from "../theme/colors";
 import { RootStackParamList } from "../types/navigation";
 
-type ScreenName = keyof Pick<RootStackParamList, "Home" | "Destinations" | "About" | "Profile">;
+type ScreenName = keyof Pick<RootStackParamList, "Home" | "Destinations" | "TravelTips" | "About" | "Profile">;
 
 type HeaderProps = {
   active: ScreenName;
@@ -13,6 +13,7 @@ type HeaderProps = {
 const items: { label: string; screen: ScreenName }[] = [
   { label: "Inicio", screen: "Home" },
   { label: "Destinos", screen: "Destinations" },
+  { label: "Dicas", screen: "TravelTips" },
   { label: "Sobre", screen: "About" },
   { label: "Perfil", screen: "Profile" }
 ];
@@ -64,6 +65,8 @@ const styles = StyleSheet.create({
     borderBottomColor: "rgba(255,255,255,0.18)",
     borderBottomWidth: 1,
     flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
     justifyContent: "space-between",
     paddingHorizontal: 18,
     paddingVertical: 8
@@ -129,6 +132,7 @@ const styles = StyleSheet.create({
   navbar: {
     backgroundColor: "#04284f",
     flexDirection: "row",
+    flexWrap: "wrap",
     gap: 6,
     paddingHorizontal: 12,
     paddingVertical: 8
@@ -136,6 +140,8 @@ const styles = StyleSheet.create({
   navButton: {
     borderRadius: 6,
     flex: 1,
+    flexBasis: 88,
+    minWidth: 78,
     paddingVertical: 10
   },
   navButtonActive: {
