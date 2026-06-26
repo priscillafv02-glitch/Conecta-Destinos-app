@@ -1,5 +1,5 @@
 import { NavigationProp } from "@react-navigation/native";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View, Share } from "react-native";
 import { colors } from "../theme/colors";
 import { RootStackParamList } from "../types/navigation";
 
@@ -22,20 +22,19 @@ export function Header({ active, navigation }: HeaderProps) {
   return (
     <View style={styles.wrapper}>
       <View style={styles.topLine}>
-        <Text style={styles.topText}>Sua proxima viagem comeca aqui</Text>
-        <Text style={styles.topText}>(11) 4002-8922</Text>
+        <Text style={styles.topText}>Sua proxima viagem comeca aqui!</Text>
       </View>
 
       <View style={styles.brandRow}>
         <View>
-          <Text style={styles.logo}>ConectaDestinos</Text>
-          <Text style={styles.subtitle}>Roteiros pensados para voce</Text>
+          <Text style={styles.logo}>Conecta Destinos</Text>
+          <Text style={styles.subtitle}>Roteiros pensados para você</Text>
         </View>
         <View style={styles.profileBadge}>
           <Text style={styles.profileInitials}>MV</Text>
           <View>
-            <Text style={styles.profileName}>Marina Viajante</Text>
-            <Text style={styles.profileStatus}>Perfil ficticio</Text>
+            <Text style={styles.profileName}>Luísa Viajante</Text>
+            <Text style={styles.profileStatus}>Perfil</Text>
           </View>
         </View>
       </View>

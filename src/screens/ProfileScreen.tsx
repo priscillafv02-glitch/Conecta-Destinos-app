@@ -18,8 +18,8 @@ export function ProfileScreen({ navigation }: ProfileProps) {
             <Text style={styles.avatarText}>MV</Text>
           </View>
           <View style={styles.profileInfo}>
-            <Text style={styles.name}>Marina Viajante</Text>
-            <Text style={styles.email}>marina.viajante@email.com</Text>
+            <Text style={styles.name}>Luísa Viajante</Text>
+            <Text style={styles.email}>luisa.viajante@email.com</Text>
             <Text style={styles.member}>Cliente ficticia - plano Explorador</Text>
           </View>
         </View>
